@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Server_users.Models
+namespace Server.Models
 {
     #nullable disable
-    public class UserModel
+    public class User
     {
         public int Id {get; set;}
         public string Name {get; set;}
