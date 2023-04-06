@@ -1,0 +1,180 @@
+.NavBar {
+    position: sticky;
+    top:60px;
+    z-index: 1000;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.NavBar-Contents {
+    border-radius: 40px;
+    height: 40px;
+    margin-top: -20px;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 3px 6px 1px #000000c5;
+}
+
+.Nav-Actions {
+    margin-top: 8px;
+    display: flex;
+}
+
+.Nav-Actions h6 {
+    font-size: 14px;
+    font-weight: 500;
+    width: 85px;
+    display: flex;
+    align-items: center;
+}
+
+.Nav-Actions i {
+    font-size: 19px;
+}
+
+.Post-Button {
+    color: #008817;
+}
+
+.Ads-Button {
+    color: #2c2594;
+}
+
+.Nav-Search {
+    width: 100%;
+}
+
+.Nav-Search form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Nav-Search input {
+    width: 90%;
+    height: 40px;
+    border-style: none;
+    border-left-style: solid;
+    border-width: 2px;
+    border-radius: 70px;
+    border-color: #d6d6d6;
+}
+
+.Nav-Search button {
+    border-style: none;
+    height: 36px;
+    width: 36px;
+    border-radius: 100%;
+    background-color: #a790c5;
+    color: rgb(255, 255, 255);
+    margin-right: 2px;
+    margin-top: 2px;
+    font-size: 13px;
+}
+
+.Add-Posting {
+    position: absolute;
+    z-index: -1;
+    top:20px;
+    left:0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 7px 8px 0px #000000cc;
+}
+
+.Add-Posting h5 {
+    color: #000000;
+}
+
+.Add-Posting span {
+    color: #0300bb;
+}
+
+.Close-Screen {
+    position: absolute;
+    top: 6px;
+    right: 9px;
+    color: #ca0000;
+}
+
+.Form-One {
+    background: #ffffff00;
+    position: relative;
+}
+
+.Purpose {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Purpose h6 {
+    font-size: 15px;
+}
+
+.Learn {
+    height: 80px;
+    width: 80px;
+    background: #33ff004b;
+    color: #007a14;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Help {
+    height: 80px;
+    width: 80px;
+    background: #ff00002c;
+    color: #ca0000;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Teach {
+    height: 80px;
+    padding-top: 8px;
+    width: 80px;
+    background: #fbff0071;
+    color: #ffa600;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Project {
+    height: 80px;
+    width: 80px;
+    background: #008cff5d;
+    color: #00277a;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Purpose div {
+    padding-top: 0px;
+    transition: padding-bottom 0.25s ease, box-shadow 0.25s ease;
+}
+
+.Purpose div:hover {
+    padding-bottom: 10px; 
+    box-shadow: 0px 6px 9px 0px #00000077;
+}
+
+.Purpose div:active {
+    background: #00277a;
+    color: #9ba8e4;
+}

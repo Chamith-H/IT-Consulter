@@ -1,0 +1,37 @@
+<div class="NavBar">
+    <div class="NavBar-Contents">
+        <div class="Nav-Actions">
+            <h6 class="ms-4 Post-Button" type="button" (click)="adsPostPopup = !adsPostPopup"><i class="bi bi-plus-circle-fill"></i>&nbsp;Post New</h6>
+            <h6 class="ms-4 me-3 Ads-Button" type="button"><i class="bi bi-info-circle-fill"></i>&nbsp;All Ads</h6>
+        </div>
+        
+        <div class="Nav-Search">
+            <form action="">
+                <input type="text">
+                <button><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div *ngIf="adsPostPopup" class="Add-Posting bg-light">
+        <div class="col-9">
+            <div class="Form-One pt-5 pb-4">
+                <h5 class="text-center"><strong>SELECT YOUR <span>PURPOSE</span></strong></h5>
+
+                <div class="Select-Purpose mt-5">
+                    <div class="row g-0">
+                        <div *ngFor="let purpose of purposes; let i=index" class="col-3 d-flex justify-content-center">
+                            <div class="Purpose">
+                                <div class={{purpose.class}} type="button" (click)="handle_Purpose(i)">
+                                    <h1 class="mb-1"><i class={{purpose.image}}></i></h1>
+                                </div>
+
+                                <h6 class="text-center mt-2">{{purpose.title}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

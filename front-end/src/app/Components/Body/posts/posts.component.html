@@ -1,0 +1,49 @@
+<div class="Posts">
+    <div class="Posting-Titles sticky-top">
+        <div class="row g-0">
+            <div class="col-3">
+                <h6 class="Title-Content ms-5">Browse Categories</h6>
+            </div>
+
+            <div class="col-9 d-flex justify-content-between px-5">
+                <h6 class="Title-Content">All Prices</h6>
+                <h6 class="Title-Content">All in SriLanka</h6>
+                <h6 class="Title-Content">All Ads</h6>
+                <h6 class="Title-Content">Quick Learn</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-0">
+        <div class="col-3">
+            <div class="Side-Bar sticky-top">
+                <div class="Selections ps-5 pt-3">
+                    <h6>All Ads</h6>
+                    
+                    <div *ngFor="let category of categories; let i=index">
+                        <div class="Category-Name">
+                            <h6 type="button" (click)="expand_Category(i)">{{category.title}}</h6>
+
+                            <div *ngIf="selectedCategory == i && expand">
+                                <div>
+                                    <div *ngFor="let subCategory of subCategories; let j=index">
+                                        <div class="Sub-Category" type="button" (click)="view_Posts(i, j)">
+                                            <img src={{subCategory.image}} alt="">
+                                            <p class="my-0 ms-1">{{subCategory.name}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="Post-Bar px-5">
+                <h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1><h1>HH</h1>
+            </div>
+        </div>
+    </div>
+</div>

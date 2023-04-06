@@ -1,0 +1,65 @@
+<div class="Home">
+    <div class="Home-Hero">
+        <div class="Align-Home-Hero">
+
+        </div>
+    </div>
+
+    <div class="Home-Body">
+        <div class="row g-0 px-5 Benefit-Row mx-5">
+            <div *ngFor="let benefit of benefits" class="col-3">
+                <div class="Benefit-Card mx-1 px-3 py-4">
+                    <div class={{benefit.class}}><i class={{benefit.icon}}></i></div>
+                    <h6 class="mb-0 mt-3">{{benefit.title}}</h6>
+                    <h6>{{benefit.extra}}</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, natus. Nobis neque vitae laudantium nulla porro pariatur in tempore? Ut accusamus ipsum doloribus cumque. Ut, quis impedit. Nam, placeat a!</p>
+                    <button>LEARN MORE <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Categories mt-5 pt-5 px-5">
+            <h1 class="mb-4 ps-5 text-center">EXPLORE OUR <span>CATEGORIES</span></h1>
+
+            <div class="Category-Items px-5">
+                <div class="row g-0">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" *ngFor="let category of categories; let i=index">
+                        <div class="Category-Card mx-1 my-2" type="button" (click)="select_Category(i)">
+                            <img src={{category.picture}} alt="">
+
+                            <div class="Category-Name">
+                                <h6>{{category.title}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Trendings px-5">
+            <p class="ps-5 pt-5">TRENDINGS THIS WEEK</p>
+        </div>
+
+        <div *ngIf="catagoryPopup" class="Selection-Popup">
+            <div class="col-9">
+                <div class="Selection-Box">
+                    <div class="Category-Title px-4 mt-4 pb-3">
+                        <h5 class="ms-1"><strong>{{selectedCategory}}</strong></h5>
+                        <button (click)="catagoryPopup = !catagoryPopup"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                    
+                    <div class="List-Items">
+                        <div class="row g-0 p-4">
+                            <div class="col-6 col-sm-4 col-md-3 col-xl-2" *ngFor="let subCategory of subCategories; let i=index">
+                                <div class="Sub-Category m-1 py-2 px-2" type="button" (click)="browse_Posts(i)">
+                                    <img src={{subCategory.image}} alt="">
+                                    <h6 class="text-center mt-2">{{subCategory.name}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

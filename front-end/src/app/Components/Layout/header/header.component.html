@@ -1,0 +1,89 @@
+<div class="Header px-5 sticky-top">
+    <div class="Header-Brand">
+        <h5 class=""><strong>OpenWorldX</strong></h5>
+
+        <div class="Header-Links ms-5 mt-1">
+            <a class="me-4" href="">Home</a>
+            <a class="me-4 ms-2" href="">Categories</a>
+            <a class="me-4 ms-2" href="">Compilar</a>
+            <a class="me-4 ms-2" href="">About us</a>
+        </div>
+    </div>
+
+    <div class="Header-Actions">
+        <button><i class="bi bi-cart-plus-fill"></i></button>
+        <button><i class="bi bi-chat-square-dots-fill"></i></button>
+        <button><i class="bi bi-bell-fill"></i></button>
+        <h4 class="me-0 ms-1">|</h4>
+        <button id="Account" (click)="view_Progress()"><i class="bi bi-person-circle"></i></button>
+    </div>
+
+    <div *ngIf="expandAccount" class="Account-Status">
+        <div *ngIf="defaultAction" class="Login">
+            <div class="row g-0 pe-3">
+                <div class="col-9">
+
+                </div>
+
+                <div class="col-3 bg-light pt-5 pb-3 px-4 Form-Box">
+                    <form #login="ngForm" (ngSubmit)="onSubmit_Login(login)">
+                        <h4 class="mb-3">Sign-in</h4>
+
+                        <div class="Form-Field">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" ngModel>
+                        </div>
+
+                        <div class="Form-Field mt-2 mb-3">
+                            <label for="password">Password</label>
+                            <input type="text" name="password" ngModel>
+                        </div>
+                        
+                        
+                        <button class="Log-Action" type="submit">Sign in</button>
+
+                        <h6 class="mt-3">New to OpenWorldX ? <span type="button" (click)="switchActions()">Sign-up</span></h6>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="!defaultAction" class="Login">
+            <div class="row g-0 pe-3">
+                <div class="col-9">
+
+                </div>
+
+                <div class="col-3 bg-light pt-5 pb-3 px-4 Form-Box">
+                    <form #register="ngForm" (ngSubmit)="onSubmit_Register(register)">
+                        <h4 class="mb-3">Sign-up</h4>
+
+                        <div class="Form-Field">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" ngModel>
+                        </div>
+
+                        <div class="Form-Field mt-2">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" ngModel>
+                        </div>
+
+                        <div class="Form-Field mt-2">
+                            <label for="password">Password</label>
+                            <input type="text" name="password" ngModel>
+                        </div>
+                        
+                        <div class="Form-Field mt-2 mb-3">
+                            <label for="confirm">Confirm Password</label>
+                            <input type="text" name="confirm" ngModel>
+                        </div>
+
+                        <button class="Log-Action" type="submit">Sign up</button>
+
+                        <h6 class="mt-3">Already have an account ? <span type="button" (click)="switchActions()">Sign-in</span></h6>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

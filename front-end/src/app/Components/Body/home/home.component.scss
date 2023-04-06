@@ -1,0 +1,222 @@
+.Home {
+    position: relative;
+}
+
+.Home-Hero {
+    min-height: calc(768px - 180px);
+    margin-top: -20px;
+    background-image: url("../../../../assets/HeroBackground.jpg");
+    background-size: cover;
+}
+
+.Align-Home-Hero {
+    min-height: calc(768px - 180px);
+    width: 100%;
+    background-color: #0000004b;
+}
+
+#Post-New {
+    position: fixed;
+    top: calc(100vh - 65px);
+    right: 30px;
+    width: 170px;
+    height: 45px;
+    border-style: none;
+    border-radius: 90px;
+    background: #270041;
+    color: rgb(255, 255, 255);
+}
+
+.Benefit-Card {
+    background: #ffff;
+    box-shadow: 0px 10px 20px -1px #000000a1;
+}
+
+.Benefit-Card h6 {
+    font-size: 15px;
+    text-shadow: 2px 2px 2px #00000049;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.Benefit-Card p {
+    font-size: 15px;
+}
+
+.Benefit-Card button {
+    padding-left: 0;
+    border-style: none;
+    background-color: rgba(240, 248, 255, 0);
+    font-size: 14px;
+    font-weight: 500;
+    color: #470077;
+}
+
+.Learn {
+    height: 35px;
+    width:35px;
+    border-radius: 100%;
+    background-color: #66ff0054;
+    color: #1cd603;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Teach {
+    height: 35px;
+    width:35px;
+    border-radius: 100%;
+    background-color: #eeff0070;
+    color: #ffbb00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Connect {
+    height: 35px;
+    width:35px;
+    border-radius: 100%;
+    background-color: #00b7ff33;
+    color: #006eff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Payment {
+    height: 35px;
+    width:35px;
+    border-radius: 100%;
+    background-color: #ff000033;
+    color: #d60303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Benefit-Row {
+    margin-top: -75px;
+}
+
+.Categories h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+    font-weight: 500;
+}
+
+.Categories span {
+    color: #001485;
+}
+
+.Category-Card {
+    position: relative;
+}
+
+.Category-Card img {
+    width: 100%;
+}
+
+.Category-Name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.685);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Category-Items {
+    margin-bottom: -80px;
+}
+
+.Category-Name h6 {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.Category-Card {
+    box-shadow: 0px 10px 20px 0px #000000;
+}
+
+.Trendings {
+    height: 300px;
+    width: 100%;
+    background: #d1d1d1;
+    padding-top: 105px;
+}
+
+.Trendings h2 {
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Selection-Popup {
+    position: fixed;
+    z-index: 9999;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: #000000c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Selection-Box {
+    width: 100%;
+    height: 85vh;
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.List-Items {
+    height: calc(100% - 110px);
+    overflow-y: auto;
+    background: #a3a3a3;
+}
+
+.Category-Title {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 8px 8px 0px #000000e8;
+    z-index: 3;
+}
+
+.Category-Title h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+}
+
+.Category-Title button {
+    margin-top: -5px;
+    border-style: none;
+    background: #006eff00;
+}
+
+.Category-Title i {
+    font-size: 22px;
+    color: #ff0000;
+}
+
+.Sub-Category {
+    background: #ffff;
+    box-shadow: 0px 10px 15px 0px #000000;
+}
+
+.Sub-Category img {
+    width: 100%;
+}
+
+.Sub-Category h6 {
+    font-size: 15px;
+    color: #000000;
+}
